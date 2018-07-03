@@ -1,0 +1,126 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+a,
+img {
+	border: 0;
+	color: #fff;
+	text-decoration: none;
+}
+
+body {
+	font: 12px/180% Arial, Helvetica, sans-serif, "新宋体";
+}
+
+
+section {
+	margin: 4em 0;
+}
+
+.toolbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: transparent;
+	line-height: 68px;
+	border-top: 2px solid #4382BA;
+	z-index: 100;
+	height: 80px;
+	background: #D6E9C6 url(../img/logo.png) no-repeat center;
+}
+.toolbar a{
+	color: #fff;
+}
+.menu-button {
+	position: relative;
+	margin: 15px 10px 10px 10px;
+	height: 36px;
+	width: 36px;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.menu-button:before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	right: 3px;
+	border-bottom: 17px double #4382BA;
+	border-top: 6px solid #4382BA;
+	width: 30px;
+	height: 5px;
+}
+
+.menu-left {
+	float: left;
+	margin-right: 1.5em;
+}
+
+.sidebar {
+	margin: 0;
+	padding-top: 1em;
+	color: white;
+	background-color: #4382BA;
+}
+
+.sidebar h6 {
+	margin: 0 .8em;
+	padding: 0;
+	font-weight: 300;
+}
+
+.sidebar li {
+	margin: .5em 0;
+	padding: 0 1em;
+	line-height: 32px;
+}
+
+.sidebar li:hover {
+	background-color: #e84e40;
+}
+
+.sidebar hr {
+	margin: 2em auto;
+	border: 0;
+	padding: 0;
+	width: 80%;
+	height: 1px;
+	background-color: white;
+}
+
+
+/*主要样式*/
+
+.subNav {
+	cursor: pointer;
+}
+
+.navContent {
+	display: none;
+	color: #999;
+}
+.subNav h4{
+	padding-top: 15%;
+	padding-left: 3%;
+	box-sizing: border-box;
+}
+.sidebar div{
+	height: 30px;
+	line-height: 30px;
+}
+.sidebar a{
+	font-size: 16px;
+}
+.sidebar h5{
+	padding-left: 15%;
+	box-sizing: border-box;
+}
+.phone_nav{
+	width: 100%;
+	height: 70px;
+}

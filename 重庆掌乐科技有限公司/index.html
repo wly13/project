@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+		<title>重庆掌乐科技有限公司</title>
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" href="css/shutter.css" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.simplesidebar.js"></script>
+	</head>
+	<!--[if lt IE 9]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<style>
+			.container {
+				width: 1000px;
+			 }
+			.row{
+				width:100%;
+			}
+			.phone_nav{
+				display:none;
+			}
+			.toolbar{
+				display:none;
+			}
+			.sidebar{
+				display:none;
+			}
+			.jishu_main li{
+				width:30%;
+				float:left;
+			}
+			.about_main li{
+				width:22%;
+				float:left;
+			}
+			.logo{
+				display:block;
+				float:left;
+			}
+			.top_nav{
+				float:left;
+				width:60%;
+			}
+			.sousuo{
+				float:left;
+			}
+			
+			
+			.join_main_info li{
+				width:20%;
+				float:left;
+			}
+			.join_tu{
+				width:100%;
+			}
+			.join_tu_info{
+				width:100%;
+				filter:Alpha(opacity=0);
+			}
+			.di_info{
+				float:left;
+			}
+			.join_tu1{
+				filter:Alpha(opacity=100);
+				z-indent:1000;
+			}
+			.join_tu_yin{
+				filter:Alpha(opacity=0);
+			}
+			.join_tu_on1{
+				filter:Alpha(opacity=100);
+			}
+			.join_tu:hover .join_tu1{
+				filter:Alpha(opacity=0);
+			}
+			.join_tu:hover .join_tu_yin{
+				filter:Alpha(opacity=100);
+			}
+			.zhengshi{
+				margin-left:36%;
+				width:72px;
+				float:left;
+			}
+			.shixi{
+				margin-right:36%;
+				width:72px;
+				float:left;
+			}
+			.join_main_tpo .shuxian{
+				display:none;
+			}
+			
+			.join_mian_xian1{
+				display:none;
+			}
+			
+			.jishu_main_yin{
+				width: 90%;
+				height:50%;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				background-color:#548ec9;
+				filter:Alpha(opacity=50);
+				color: #fff;
+				padding: 3%;
+				box-sizing: border-box;
+				display: none;
+			}
+			.jishu_main_yin1{
+				width: 90%;
+				height:50%;
+				position: absolute;
+				bottom: 0;
+				right: 15px;
+				background-color:#548ec9;
+				filter:Alpha(opacity=70);
+				color: #fff;
+				padding: 3%;
+				box-sizing: border-box;
+				display: none;
+			}
+			.jishu_main_yin2{
+				width: 90%;
+				height:50%;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				background-color:#548ec9;
+				filter:Alpha(opacity=70);
+				color: #fff;
+				padding: 3%;
+				box-sizing: border-box;
+				display: none;
+			}
+			.about_main_yin{
+				width: 95%;
+				height: 80%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color:#548ec9;
+				filter:Alpha(opacity=70);
+				color: #fff;
+				padding: 50% 5% 40% 5%;
+				box-sizing: border-box;
+				display: none;
+			}
+			.di_dingyue{
+				width:30%;	
+			}
+			.di_info{
+				margin-left:10%;
+			}
+		</style>
+		<script src="../js/jquery-3.2.1.js" type="text.javascript"></script>
+		<script src="../js/IE8.js" type="text.javascript"></script>
+		<script>
+			$(".join_tu").mousemove(function(){
+				$(this).siblings("div").addClass("join_tu_on1")
+			}).mouseout(function(){
+				$(this).siblings("div").removeClass("join_tu_on1")
+			})
+		</script>
+		<![endif]-->
+	<body>
+		<!--顶部导航条-->
+		<div class="top hidden-xs">
+			<div class="container">
+				<div class="row">
+					<a href="index.html" class="col-lg-1 col-md-1 col-sm-1 logo">
+						<img src="img/logo.png"  />
+					</a>
+					<ul class="col-lg-8 col-md-8 col-sm-8 top_nav ">
+						<li>
+							<a href="fullpage.html" class="top_nav_on">首页</a>
+						</li>
+						<li>
+							<a href="product.html" >产品展示</a>
+						</li>
+						<li>
+							<a href="news.html">新闻资讯</a>
+						</li>
+						<li>
+							<a href="technology.html">技术团队</a>
+						</li>
+						<li>
+							<a href="recruit.html">招聘人才</a>
+						</li>
+						<li>
+							<a href="about.html">关于我们</a>
+						</li>
+					</ul>
+					<form class="col-lg-3 col-md-3 col-sm-3 sousuo "> 
+						<input type="text" class="shuru" placeholder="请输入关键字" name="word" />
+						<input type="submit" class="soutu" value="" formaction="https://www.baidu.com/s" formtarget="_blank" >
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<div class="phone_nav visible-xs"></div>
+		
+		<div class="toolbar visible-xs">
+			<div id="open-sb" class="menu-button menu-left"></div>
+		</div>
+		
+		<div class="sidebar visible-xs">
+			<div class="subNav"><h4>重庆掌乐科技有限公司</h4></div>
+			<hr />
+			<div class="subNav"><h5><a href="index.html">首页</a></h5></div>
+			<div class="subNav"><h5><a href="product.html">产品展示</a></h5></div>
+			<div class="subNav"><h5><a href="news.html">新闻中心</a></h5></div>
+			<div class="subNav"><h5><a href="technology.html">技术团队</a></h5></div>
+			<div class="subNav"><h5><a href="recruit.html">招聘人才</a></h5></div>
+			<div class="subNav"><h5><a href="about.html">关于我们</a></h5></div>
+		</div>
+		
+		<!--轮播-->
+		<div class="banner">
+			<div class="shutter">
+				<div class="shutter-img">
+				  <a href="#" data-shutter-title="Iron Man"><img src="img/banner1.png" alt="#"></a>
+				  <a href="#" data-shutter-title="Super Man"><img src="img/banner2.png" alt="#"></a>
+				  <a href="#" data-shutter-title="The Hulk"><img src="img/banner1.png" alt="#"></a>
+				   <a href="#" data-shutter-title="The your"><img src="img/banner2.png" alt="#"></a>
+				</div>
+				<ul class="shutter-btn">
+				  <li class="prev"></li>
+				  <li class="next"></li>
+				</ul>
+			</div>
+		</div>
+		
+				
+		
+		
+		<!--技术团队-->
+		<div class="jishu">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-lg-offset-4 col-md-offset-4 col-sm-offset-4  jishu_top">
+						<span>技术团队</span>
+					</div>
+					<div class="clear"></div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 jishu_main">
+						<ul>
+							<li class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+								<a href="technology.html" class="jishu_te">
+									<img src="img/technology1.png" />
+									<div class="jishu_main_yin">
+										<span>刘鹏程，中国硬件师，重庆市硬件设计协会常务理事、重庆市电脑设计师协会的高级顾问。</span>
+									</div>
+								</a>
+							</li>
+							<li class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+								<a href="technology.html" class="jishu_te1">
+									<img src="img/technology2.png" />
+									<div class="jishu_main_yin1">
+										<span>刘鹏程，中国硬件师，重庆市硬件设计协会常务理事、重庆市电脑设计师协会的高级顾问。</span>
+									</div>
+								</a>
+							</li>
+							<li class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+								<a href="technology.html" class="jishu_te2">
+									<img src="img/technology3.png" />
+									<div class="jishu_main_yin2">
+										<span>刘鹏程，中国硬件师，重庆市硬件设计协会常务理事、重庆市电脑设计师协会的高级顾问。</span>
+									</div>
+								</a>
+							</li>
+							<li class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+								<a href="technology.html" class="jishu_te">
+									<img src="img/technology4.png" />
+									<div class="jishu_main_yin">
+										<span>刘鹏程，中国硬件师，重庆市硬件设计协会常务理事、重庆市电脑设计师协会的高级顾问。</span>
+									</div>
+								</a>
+							</li>
+							<li class="col-lg-4 col-md-4 col-sm-6 hidden-xs">
+								<a href="technology.html" class="jishu_te1">
+									<img src="img/technology5.png" />
+									<div class="jishu_main_yin1">
+										<span>刘鹏程，中国硬件师，重庆市硬件设计协会常务理事、重庆市电脑设计师协会的高级顾问。</span>
+									</div>
+								</a>
+							</li>
+							<li class="col-lg-4 col-md-4 col-sm-6 hidden-xs">
+								<a href="technology.html" class="jishu_te2">
+									<img src="img/technology6.png" />
+									<div class="jishu_main_yin2">
+										<span>刘鹏程，中国硬件师，重庆市硬件设计协会常务理事、重庆市电脑设计师协会的高级顾问。</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--产品展示-->
+		<div class="product">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-lg-offset-4 col-xs-12 product_top"></div>
+					<a href="" class="qiang">
+						点击抢购
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--新闻动态、-->
+		<div class="news">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-4 col-md-offset-4 col-sm-offset-4 news_top">
+						<span>新闻动态</span>
+					</div>
+					<div class="news_main">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 news_main_left">
+							<video controls="controls">
+								<source src="shipin/moive.mp4" type="video/mp4" />
+							</video>
+							<div class="desc">
+								<p>初心者再启程 掌乐《仙境传说RO:复兴》正式公开<span class="time pull-right">2016-04-12</span></p>
+								<p class="describe">“冒险者，从心出发”，作为《仙境传说》15周年的献礼之作，《仙境传说RO：复兴》采用了卡牌类RPG的玩法设计，也是基于骏梦游戏在卡牌游戏长期的成功经验积累。</p>
+							</div>
+						</div>
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 news_main_right">
+							<ul>
+								<li>
+									<span class="title">掌乐获《梦化龙》掌机开发权</span>
+									<span class="time">2016-06-22</span>
+									<span class="describe">继《仙境传》中国大陆地区授权后一路走来，我们一起历....</span>
+								</li>
+								<li>
+									<span class="title">经典回归《复兴》今日PSP首测 </span>
+									<span class="time">2016-06-07</span>
+									<span class="describe">掌乐出品的《复兴》正统PSP机游《神谕降临》即将开启....</span>
+								</li>
+								<li>
+									<span span>经典热血不减《热血江湖》上线     </span>
+									<span class="time">2016-04-22</span>
+									<span class="describe">掌乐《热血江湖》掌机版将上线新的起点，新的征程，预....</span>
+								</li>
+								<li>
+									<span span>《曹操传》今日掌机上线</span>
+									<span class="time">2016-04-21</span>
+									<span class="describe">化身曹操，亲身体验万军鏖战沙场《风云归来》公测火爆...</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--关于掌乐-->
+		<div class="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-lg-offset-4 col-md-offset-4 col-sm-offset-4 about_top">
+						<span>关于掌乐</span>
+					</div>
+					
+					<div class="clear"></div>
+					<div class="about_main">
+						<ul>
+							<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+								<a href="about.html">
+									<img src="img/qiye1.png" />
+									<div class="about_main_yin">
+										<span>掌乐科技是一家以研发、生产、销售PSP机及配件为主营业务的上市公司。</span>
+									</div>
+								</a>
+								<div class="about_jie">
+									<span>简介</span>
+									<span class="about_jie_xian"></span>
+									<span class="bianhao">01</span>
+								</div>
+							</li>
+							<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+								<a href="about.html">
+									<img src="img/qiye2.png" />
+									<div class="about_main_yin">
+										<span>掌乐科技是一家以研发、生产、销售PSP机及配件为主营业务的上市公司。</span>
+									</div>
+								</a>
+								<div class="about_jie">
+									<span>荣誉</span>
+									<span class="about_jie_xian"></span>
+									<span class="bianhao">02</span>
+								</div>
+							</li>
+							<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+								<a href="about.html">
+									<img src="img/qiye3.png" />
+									<div class="about_main_yin">
+										<span>掌乐科技是一家以研发、生产、销售PSP机及配件为主营业务的上市公司。</span>
+									</div>
+								</a>
+								<div class="about_jie">
+									<span>文化</span>
+									<span class="about_jie_xian"></span>
+									<span class="bianhao">03</span>
+								</div>
+							</li>
+							<li class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+								<a href="about.html">
+									<img src="img/qiye4.png" />
+									<div class="about_main_yin">
+										<span>掌乐科技是一家以研发、生产、销售PSP机及配件为主营业务的上市公司。</span>
+									</div>
+								</a>
+								<div class="about_jie">
+									<span>规模</span>
+									<span class="about_jie_xian"></span>
+									<span class="bianhao">04</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--加入我们-->
+		<div class="join">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-lg-offset-4 col-md-offset-4 col-sm-offset-4 join_top">
+						<span>加入我们</span>
+					</div>
+					<div class="join_main">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-4 col-md-offset-4 col-sm-offset-4 join_main_tpo">
+							<span class="zhengshi">正式岗位</span>
+							<span class="shuxian">|</span>
+							<span class="pull-right shixi">实习岗位</span>
+						</div>
+						<div class="clear"></div>
+						<div class="join_mian_xian2">
+							<div class="join_mian_xian join_xian_on"></div>
+							<div class="join_mian_xian1"></div>
+						</div>
+						<div class="join_main_info hidden-xs">
+							<ul>
+								<li class="col-lg-2 col-md-2 col-sm-2 col-xs-6 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+									<div class="join_tu join_tu_te join_tu_on1">
+										<img src="img/jishu.png" class="join_tu1" />
+										<img src="img/jishu1.png " class="join_tu_yin join_tu1" />
+									</div>
+									<p>技术类</p>
+									<div class="join_tu_info join_tu_on">
+										<span>模具生产</span>
+										<p>了解生产计划，负责按照生产计划及时调试产品，必须符合图纸、技术要求、工艺规程和检验标准等。</p>
+									</div>
+								</li>
+								<li class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+									<div class="join_tu ">
+										<img src="img/cehua1.png" class="join_tu1" />
+										<img src="img/cehua.png" class="join_tu_yin" />
+									</div>
+									<p>策划类</p>
+									<div class="join_tu_info">
+										<span>游戏策划</span>
+										<p>对游戏的策划进行安排，提交原始设计及规划文档，对策划人员管理和安排统筹</p>
+									</div>
+								</li>
+								<li class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+									<div class="join_tu">
+										<img src="img/shichang.png" class="join_tu1" />
+										<img src="img/shichang1.png" class="join_tu_yin" />
+									</div>
+									<p>市场类</p>
+									<div class="join_tu_info">
+										<span>市场营销</span>
+										<p>负责跨部门经营工作的整体协调及支撑工作， 负责参与SLA的制订、调整及评估工作。</p>
+									</div>
+								</li>
+								<li class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+									<div class="join_tu join_tu_te">
+										<img src="img/meishu.png" class="join_tu1" />
+										<img src="img/meishu1.png" class="join_tu_yin" />
+									</div>
+									<p>美术类</p>
+									<div class="join_tu_info">
+										<span>画出模形</span>
+										<p>参与模型原画设计，画出原画，参与磨具模型设计与制作。</p>
+									</div>
+								</li>
+								<li class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+									<div class="join_tu join_tu_te">
+										<img src="img/zhijeng.png" class="join_tu1"/>
+										<img src="img/zhijeng1.png" class="join_tu_yin" />
+									</div>
+									<p>职能类</p>
+									<div class="join_tu_info">
+										<span>行政管理</span>
+										<p>根据各部门对人力资源的需求,作好员工的招聘、考核、选拔、调配、离职等工作。</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="join_main_info visible-xs phone">
+							<ul>
+								<li class="col-lg-2 col-md-2 col-sm-2 col-xs-6 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+									<div class="join_tu join_tu_te">
+										<img src="img/jishu.png" class="join_tu1" />
+									</div>
+									<p>技术类</p>
+									<div class="join_tu_info join_tu_on">
+										<span>模具生产</span>
+										<p>了解生产计划，负责按照生产计划及时调试产品，对调试产品的质量负责，必须符合图纸、技术要求、工艺规程和检验标准等。</p>
+									</div>
+								</li>
+								<li class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+									<div class="join_tu ">
+										<img src="img/cehua1.png" class="join_tu1" />
+									</div>
+									<p>策划类</p>
+									<div class="join_tu_info join_tu_on">
+										<span>游戏策划</span>
+										<p>对游戏的策划进行安排，提交原始设计及规划文档，和主程和主美进行合作，对策划人员管理和安排统筹</p>
+									</div>
+								</li>
+								<li class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+									<div class="join_tu">
+										<img src="img/shichang.png" class="join_tu1" />
+									</div>
+									<p>市场类</p>
+									<div class="join_tu_info join_tu_on">
+										<span>市场营销</span>
+										<p>负责跨部门经营工作的整体协调及支撑工作，负责组织年度市场预测及季度调整工作， 负责参与SLA的制订、调整及评估工作。</p>
+									</div>
+								</li>
+								<li class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+									<div class="join_tu join_tu_te">
+										<img src="img/meishu.png" class="join_tu1" />
+									</div>
+									<p>美术类</p>
+									<div class="join_tu_info join_tu_on">
+										<span>画出模形</span>
+										<p>参与模型原画设计，画出原画，参与磨具模型设计与制作。</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--底部-->
+		<div class="di hidden-xs">
+			<div class="container">
+				<div class="row">
+					<a href="" class="col-lg-1 col-md-1 col-sm-1 logo">
+						<img src="img/logo1.png" />
+					</a>
+					<div class="col-lg-5 col-md-5 col-sm-5 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 di_info">
+						<p>地址：重庆市渝中区牛角沱公交车站旁</p>
+						<p>24小时客服：023-6523-4751</p>
+						<p>在线服务：QQ-352468217</p>
+						<p>网址：WWW.ZHANGYUE.COM</p>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 pull-right di_dingyue">
+						<h5 class="text-center">预约订购</h4>
+						<form>
+							<label for="name">姓名</label>
+							<input type="text" id="name" /><br />
+							<label for="tel">电话</label>
+							<input type="tel" id="tel" /><br />
+							<input type="button" value="提交" class="tijiao">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="di1 visible-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h3 class="text-center">预约订购</h3>
+						<form>
+							<label for="name">姓名</label>
+							<input type="text" id="name" /><br />
+							<label for="tel">电话</label>
+							<input type="tel" id="tel" /><br />
+							<input type="button" value="提交" class="tijiao">
+						</form>
+					</div>
+					<div class="col-xs-12" style="margin-top: 3%;">
+						<p>地址：重庆市渝中区牛角沱公交车站旁</p>
+						<p>24小时客服：023-6523-4751</p>
+						<p>在线服务：QQ-352468217</p>
+						<p>网址：WWW.ZHANGYUE.COM</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--页尾-->
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<p class="col-lg-12 col-md-12 col-sm-12">Copyright  @  2003-2016 www.***.com, All Rights Reserved.&nbsp;&nbsp;&ang;渝ICP备05012247号 &nbsp;技术支持：王正炼</p>
+				</div>
+			</div>
+		</div>
+		
+		<!--返回按钮-->
+		<div class="fix hidden-xs">
+			<a href="#">
+				<img src="img/fanhui.png"/>
+			</a>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			$( '.sidebar' ).simpleSidebar({
+				settings: {
+					opener: '#open-sb',
+					wrapper: '.wrapper',
+					animation: {
+						duration: 500,
+						easing: 'easeOutQuint'
+					}
+				},
+				sidebar: {
+					align: 'left',
+					width: 200,
+					closingLinks: 'a',
+				}
+			});
+		});
+		</script>
+		
+		<script type="text/javascript">
+		$(function(){
+		$(".subNav").click(function(){
+					// 修改数字控制速度， slideUp(500)控制卷起速度
+					$(this).next(".navContent").slideToggle(500);
+			})	
+		})
+	</script>
+
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.js" ></script>	
+	<script type="text/javascript" src="js/index.js" ></script>
+	<script src="js/velocity.js"></script>
+	<script src="js/shutter.js"></script>
+	<script>
+	$(function () {
+	  $('.shutter').shutter({
+		shutterW: 100+"%", // 容器宽度
+		shutterH: 100+"%", // 容器高度
+		isAutoPlay: true, // 是否自动播放
+		playInterval: 3000, // 自动播放时间
+		curDisplay: 3, // 当前显示页
+		fullPage: false // 是否全屏展示
+	  });
+	});
+	</script>
+</html>

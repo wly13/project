@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" href="css/shutter.css" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.simplesidebar.js"></script>
+		<title>新闻详情</title>
+	</head>
+	<!--[if lt IE 9]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<style>
+			.container {
+				width: 1000px;
+			 }
+			.row{
+				width:100%;
+			}
+			.phone_nav{
+				display:none;
+			}
+			.toolbar{
+				display:none;
+			}
+			.sidebar{
+				display:none;
+			}
+			.logo{
+				display:block;
+				float:left;
+			}
+			.top_nav{
+				float:left;
+				width:60%;
+			}
+			.sousuo{
+				float:left;
+			}
+			.shuru1{
+				width:100%;
+			}
+			.di_info{
+				float:left;
+			}
+			
+			.news_info_xuan{
+				width:30%;
+				float:left;
+			}
+			.news_info_main{
+				width:70%;
+				float:left;
+			}
+		</style>
+		<script src="../js/jquery-3.2.1.js" type="text.javascript"></script>
+		<script src="../js/IE8.js" type="text.javascript"></script>
+		<![endif]-->
+	<body>
+		<!--顶部导航条-->
+		<div class="top hidden-xs">
+			<div class="container">
+				<div class="row">
+					<a href="index.html" class="col-lg-1 col-md-1 col-sm-1 logo">
+						<img src="img/logo.png"  />
+					</a>
+					<ul class="col-lg-8 col-md-8 col-sm-8 top_nav ">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="product.html" >产品展示</a>
+						</li>
+						<li>
+							<a href="news.html" class="top_nav_on">新闻资讯</a>
+						</li>
+						<li>
+							<a href="technology.html">技术团队</a>
+						</li>
+						<li>
+							<a href="recruit.html">招聘人才</a>
+						</li>
+						<li>
+							<a href="about.html" >关于我们</a>
+						</li>
+					</ul>
+					<form class="col-lg-3 col-md-3 col-sm-3 sousuo "> 
+						<input type="text" class="shuru1" placeholder="请输入关键字" name="word" />
+						<input type="submit" class="soutu1" value="" formaction="https://www.baidu.com/s" formtarget="_blank" />
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<div class="phone_nav visible-xs"></div>
+		
+		<div class="toolbar visible-xs">
+			<div id="open-sb" class="menu-button menu-left"></div>
+		</div>
+		
+		<div class="sidebar visible-xs">
+			<div class="subNav"><h4>重庆掌乐科技有限公司</h4></div>
+			<hr />
+			<div class="subNav"><h5><a href="index.html">首页</a></h5></div>
+			<div class="subNav"><h5><a href="product.html">产品展示</a></h5></div>
+			<div class="subNav"><h5><a href="news.html">新闻中心</a></h5></div>
+			<div class="subNav"><h5><a href="technology.html">技术团队</a></h5></div>
+			<div class="subNav"><h5><a href="recruit.html">招聘人才</a></h5></div>
+			<div class="subNav"><h5><a href="about.html">关于我们</a></h5></div>
+		</div>
+		
+		<div class="clear"></div>
+		<!--轮播-->
+		<div class="news_banner">
+			<div class="shutter">
+				<div class="shutter-img">
+				  <a href="#" data-shutter-title="Iron Man"><img src="img/n_banner.png" alt="#"></a>
+				  <a href="#" data-shutter-title="Super Man"><img src="img/n_banner.png" alt="#"></a>
+				  <a href="#" data-shutter-title="The Hulk"><img src="img/n_banner.png" alt="#"></a>
+				   <a href="#" data-shutter-title="The your"><img src="img/n_banner.png" alt="#"></a>
+				</div>
+				<ul class="shutter-btn">
+				  <li class="prev"></li>
+				  <li class="next"></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="P_mianbao hidden-xs">
+			<div class="container">
+				<div class="row">
+					<p><a href="index.html">首页</a>><a href="news.html">新闻资讯</a>><span>最新动态</span></p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="news_info">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs news_info_xuan">
+						<span>新闻列表</span>
+						<ul>
+							<li class="P_list_on"><a href="news.html" style="color:;">最新动态</a>
+								<img src="img/p_sanjiao.png" class="P_san_on A_list_xuan_tu"/>
+							</li>
+							<li>媒体报道
+								<img src="img/p_sanjiao.png" class="A_list_xuan_tu" />
+							</li>
+							<li>公司公告
+								<img src="img/p_sanjiao.png" class="A_list_xuan_tu" />
+							</li>
+						</ul>
+					</div>
+					
+					<div class="col-xs-12 visible-xs news_info_xuan1 ">
+						<span class="col-xs-4 news_info_xuan11" style="margin-top: 3%;">新闻资讯</span>
+						<p class="col-xs-8" style="margin-top: 3%;"><a href="index.html">首页</a>><a href="news.html">新闻资讯</a>>最新动态</p>
+						<div class="clear"></div>
+						<ul>
+							<li class="col-xs-4"><a href="news.html" class="P_list_on" style="color: #437CB8;">最新动态</a></li>
+							<li class="col-xs-4"><a href="news.html">媒体报道</a></li>
+							<li class="col-xs-4"><a href="news.html">公示公告</a></li>
+						</ul>
+					</div>
+					
+					<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 news_info_main">
+						<div class="news_info1 news_info_on">
+							<h2 class="text-center hidden-xs">掌乐科技迈入2016中国民营企业100强</h2>
+							<h4 class="text-center visible-xs">掌乐科技迈入2016中国民营企业100强</h4>
+							<p>2016年8月25日，由全国工商联主办，工业和信息化部、国家工商总局支持的2016中国民营企业500强发布会在京召开。全国政协副主席、全国工商联主席王钦敏出席并致辞。国家发改委副主任张勇，国家工商总局副局长王江平，全国工商联副主席黄荣、杨启儒等出席了发布会。发布会由黄荣同志主持。</p>
+							<img src="img/N1.png" class="hidden-xs"/>
+							<img src="img/N1.png" class="col-xs-12 visible-xs" />
+							<!--<div class="clear"></div>-->
+							<span class="text-center">全国政协副主席、全国工商联主席王钦敏出席2016中国民营企业500强发布会并致辞</span>
+							<p>本次发布会以“坚定信心 创新发展”为主题，旨在增强民营企业发展信心、展示发展成就、分享成功经验、引领创新发展。荣登2016年榜单的中国民营企业500强，都是在激烈的市场竞争中脱颖而出的佼佼者。榜单的背后，折射出他们坚持创新发展的理念、不断转型升级的步伐、做强实体经济的信心和不懈努力付出的汗水。这既是民营企业500强的真实写照，更是民营经济践行健康发展的实践硕果。</p>
+							<p>自1998年以来，全国工商联已连续18年对上规模民营企业开展调研，主要根据年营业收入总额指标降序排列，本次民营企业500强入围门槛达101.75亿元。</p>
+							<p>掌乐科技自2013年首次入围评选以来，已连续4年获得中国民营企业500强殊荣，并且排名呈快速上升趋势，从2013年排名第309位上升到2016年排名第94位，充分凸显了企业的规模实力和品牌影响力的日益强盛。</p>
+							<p>在2015年经济下行压力较大、部分行业和企业生产经营困难的情况下，作为中国民营经济领头羊、排头兵的民营企业500强，继续呈现出良好的发展势头和经营业绩，营业收入仍然实现同比增长10.06%。而掌乐科技的表现尤为突出，根据全国工商联发布的数据显示，相较于2014年345亿元的营业收入，蓝思科技（集团）2015年的营业收入增长了20%，达到414亿元。</p>
+							<p>一直以来，掌乐科技坚持创新发展，不断加大自主创新力度</p>
+							<p>同时掌乐科技通过“国家千人计划”等从国内外引进高端科技人才</p>
+							<div>
+								<p>作者：吴敏  综合全国工商联官网报道</p>
+								<p>发布时间：2016年3月28日</p>
+								<p>点击量：56次</p>
+							</div>
+						</div>
+						<div class="news_info2">
+							<div class="news_list_main2">
+								<div class="news_list_top">
+									<span>媒体报道</span>
+								</div>
+								<div class="N_L_main2">
+								</div>
+							</div>
+						</div>
+						
+						<div class="news_info3">
+							<div class="news_list_main3">
+								<div class="news_list_top">
+									<span>公示公告</span>
+								</div>
+								<div class="N_L_main3">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--翻页-->
+					<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 pull-right fanye">
+						<div class="N_pre">上一页</div>
+						<ul>
+							<li class="N_on">1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+						</ul>
+						<div class="N_next">下一页</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<!--页尾-->
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<p class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Copyright  @  2003-2016 www.***.com, All Rights Reserved.&nbsp;&nbsp;&ang;渝ICP备05012247号 &nbsp;技术支持：王正炼</p>
+				</div>
+			</div>
+		</div>
+		
+		<!--返回按钮-->
+		<div class="fix hidden-xs">
+			<a href="#">
+				<img src="img/fanhui.png"/>
+			</a>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			$( '.sidebar' ).simpleSidebar({
+				settings: {
+					opener: '#open-sb',
+					wrapper: '.wrapper',
+					animation: {
+						duration: 500,
+						easing: 'easeOutQuint'
+					}
+				},
+				sidebar: {
+					align: 'left',
+					width: 200,
+					closingLinks: 'a',
+				}
+			});
+		});
+		</script>
+		
+		<script type="text/javascript">
+		$(function(){
+		$(".subNav").click(function(){
+					// 修改数字控制速度， slideUp(500)控制卷起速度
+					$(this).next(".navContent").slideToggle(500);
+			})	
+		})
+	</script>
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.js" ></script>
+	<script type="text/javascript" src="js/index.js" ></script>
+	<script type="text/javascript" src="js/velocity.js" ></script>
+	<script type="text/javascript" src="js/shutter.js" ></script>
+	<script>
+	$(function () {
+	  $('.shutter').shutter({
+		shutterW: 100+"%", // 容器宽度
+		shutterH: 100+"%", // 容器高度
+		isAutoPlay: true, // 是否自动播放
+		playInterval: 3000, // 自动播放时间
+		curDisplay: 3, // 当前显示页
+		fullPage: false // 是否全屏展示
+	  });
+	});
+	</script>
+</html>

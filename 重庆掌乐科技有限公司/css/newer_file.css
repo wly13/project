@@ -1,0 +1,184 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+.one {
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+}
+
+.section-bg-moveable {
+	position: absolute;
+	width: auto;
+	height: auto;
+	background: url(../img/fullpage_banner2.jpg) center no-repeat;
+	background-size: 100%;
+	right: -20px;
+	left: -20px;
+	top: -20px;
+	bottom: -20px;
+}
+
+.er {
+	position: absolute;
+	width: auto;
+	height: auto;
+	background: url(../img/fullpage_banner1.jpg) center no-repeat;
+	background-size: 100%;
+	right: -20px;
+	left: -20px;
+	top: -20px;
+	bottom: -20px;
+}
+
+.san {
+	position: absolute;
+	width: auto;
+	height: auto;
+	background: url(../img/fullpage_banner3.jpg) center no-repeat;
+	background-size: 100%;
+	right: -20px;
+	left: -20px;
+	top: -20px;
+	bottom: -20px;
+}
+
+.si {
+	position: absolute;
+	width: auto;
+	height: auto;
+	background: url(../img/fullpage_banner4.jpg) center no-repeat;
+	background-size: 100%;
+	right: -20px;
+	left: -20px;
+	top: -20px;
+	bottom: -20px;
+}
+
+
+
+body,
+div,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+html {
+	overflow: hidden;
+}
+
+body {
+	width: 100%;
+	*cursor: default;
+	overflow: hidden;
+	font: 16px/1.5 "Microsoft YaHei", Helvetica, STHeiti STXihei, Microsoft JhengHei, Arial;
+}
+
+#pageContain {
+	overflow: hidden;
+}
+
+.page {
+	display: none;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.contain {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: relative;
+	z-index: 0;
+}
+
+.current .contain,
+.slide .contain {
+	display: block;
+}
+
+.current {
+	display: block;
+	z-index: 1;
+}
+
+.slide {
+	display: block;
+	z-index: 2;
+}
+
+.swipe {
+	display: block;
+	z-index: 3;
+	transition-duration: 0ms !important;
+	-webkit-transition-duration: 0ms !important;
+}
+
+.page1 {
+	background: #37c1e3;
+}
+
+.page2 {
+	background: #009922;
+}
+
+.page3 {
+	background: #992211;
+}
+
+.page4 {
+	background: #ff00ff;
+}
+
+.page5 {
+	background: #00ff00;
+}
+
+.page6 {
+	background: #22ffff;
+}
+
+#navBar {
+	z-index: 3;
+	position: absolute;
+	top: 40%;
+	right: 3%;
+}
+
+#navBar .active {
+	background: #ccc;
+}
+
+#navBar li {
+	cursor: pointer;
+	margin-bottom: 10px;
+	transition: all .7s ease;
+	border-radius: 50%;
+	line-height: 40px;
+	text-align: center;
+	width: 20px;
+	height: 20px;
+}
+
+.txt {
+	margin-top: 20%;
+	font-size: 50px;
+	color: #fff;
+	text-align: center;
+}

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" href="css/shutter.css" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.simplesidebar.js"></script>
+		<title>产品中心</title>
+	</head>
+	<!--[if lt IE 9]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<style>
+			.container {
+				width: 1000px;
+			 }
+			.row{
+				width:100%;
+			}
+			.phone_nav{
+				display:none;
+			}
+			.toolbar{
+				display:none;
+			}
+			.sidebar{
+				display:none;
+			}
+			.logo{
+				display:block;
+				float:left;
+			}
+			.top_nav{
+				float:left;
+				width:60%;
+			}
+			.sousuo{
+				float:left;
+			}
+			.shuru1{
+				width:100%;
+			}
+			.di_info{
+				float:left;
+			}
+			
+			
+			.P_list_xuan{
+				width:30%;
+				float:left;
+			}
+			.P_list_main{
+				width:70%;
+				float:left;
+			}
+			.P_main li{
+				width:50%;
+				float:left;
+			}
+			
+			.product_info_yin{
+				position: absolute;
+				left: 0;
+				top: 71%;
+				width: 100%;
+				height: 60px;
+				line-height: 60px;
+				text-align: center;
+				background-color:#548ec9;
+				filter:Alpha(opacity=70);
+				color: #fff;
+				font-size: 18px;
+				display: none;
+			}
+		</style>
+		<script src="../js/jquery-3.2.1.js" type="text.javascript"></script>
+		<script src="../js/IE8.js" type="text.javascript"></script>
+		<![endif]-->
+	<body>
+		
+		<!--顶部导航条-->
+		<div class="top hidden-xs">
+			<div class="container">
+				<div class="row">
+					<a href="index.html" class="col-lg-1 col-md-1 col-sm-1 logo">
+						<img src="img/logo.png"  />
+					</a>
+					<ul class="col-lg-8 col-md-8 col-sm-8 top_nav ">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="product.html" class="top_nav_on">产品展示</a>
+						</li>
+						<li>
+							<a href="news.html">新闻资讯</a>
+						</li>
+						<li>
+							<a href="technology.html">技术团队</a>
+						</li>
+						<li>
+							<a href="recruit.html">招聘人才</a>
+						</li>
+						<li>
+							<a href="about.html">关于我们</a>
+						</li>
+					</ul>
+					<form class="col-lg-3 col-md-3 col-sm-3 sousuo "> 
+						<input type="text" class="shuru1" placeholder="请输入关键字" name="word" />
+						<input type="submit" class="soutu1" value="" formaction="https://www.baidu.com/s" formtarget="_blank" />
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<div class="phone_nav visible-xs"></div>
+		
+		<div class="toolbar visible-xs">
+			<div id="open-sb" class="menu-button menu-left"></div>
+		</div>
+		
+		<div class="sidebar visible-xs">
+			<div class="subNav"><h4>重庆掌乐科技有限公司</h4></div>
+			<hr />
+			<div class="subNav"><h5><a href="index.html">首页</a></h5></div>
+			<div class="subNav"><h5><a href="product.html">产品展示</a></h5></div>
+			<div class="subNav"><h5><a href="news.html">新闻中心</a></h5></div>
+			<div class="subNav"><h5><a href="technology.html">技术团队</a></h5></div>
+			<div class="subNav"><h5><a href="recruit.html">招聘人才</a></h5></div>
+			<div class="subNav"><h5><a href="about.html">关于我们</a></h5></div>
+		</div>
+		
+		<div class="clear"></div>
+		<!--轮播、-->
+		<div class="p_banner">
+			<div class="shutter">
+				<div class="shutter-img">
+				  <a href="#" data-shutter-title="Iron Man"><img src="img/p_banner.png" alt="#"></a>
+				  <a href="#" data-shutter-title="Super Man"><img src="img/p_banner.png" alt="#"></a>
+				  <a href="#" data-shutter-title="The Hulk"><img src="img/p_banner.png" alt="#"></a>
+				   <a href="#" data-shutter-title="The your"><img src="img/p_banner.png" alt="#"></a>
+				</div>
+				<ul class="shutter-btn">
+				  <li class="prev"></li>
+				  <li class="next"></li>
+				</ul>
+			</div>
+		</div>
+		<!--列表-->
+		<div class="P_list">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs P_list_xuan">
+						<span>产品展示</span>
+						<ul>
+							<li class="P_list_on">最新产品
+								<img src="img/p_sanjiao.png" class="A_list_xuan_tu P_san_on"/>
+							</li>
+							<li>配件装备
+								<img src="img/p_sanjiao.png" class="A_list_xuan_tu" /></li>
+							<li>业务介绍
+								<img src="img/p_sanjiao.png" class="A_list_xuan_tu"/></li>
+						</ul>
+					</div>
+					
+					<div class="col-xs-12 visible-xs P_list_xuan1 ">
+						<span>产品展示</span>
+						<ul>
+							<li class="P_list_on col-xs-4">最新产品</li>
+							<li class="col-xs-4">配件装备</li>
+							<li class="col-xs-4">业务介绍</li>
+						</ul>
+					</div>
+					<div class="col-lg-8 col-md-9 col-sm-9 col-xs-12 P_list_main">
+						
+						<div class="P_list_main1 P_main_on">
+							<div class="P_main_top">
+								<span>最新产品</span>
+							</div>
+							<div class="P_main">
+								<!--最新产品-->
+								<ul class="zuixinchanpin">
+									<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+										<a href="product_info.html" class="P_main_te">
+											<img src="img/p_07.png" />
+											<div class="product_info_yin">
+												<span>点击详情</span>
+											</div>
+										</a>
+										<span>GPD XD 是红色 2G/64G</span>
+									</li>
+									<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+										<a href="product_info.html" class="P_main_te">
+											<img src="img/p_10.png" />
+											<div class="product_info_yin">
+												<span>点击详情</span>
+											</div>
+										</a>
+										<span>GPD XD 是蓝色2G/64G</span>
+									</li>
+									<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+										<a href="product_info.html" class="P_main_te">
+											<img src="img/p_48.png" />
+											<div class="product_info_yin">
+												<span>点击详情</span>
+											</div>
+										</a>
+										<span>GPD XD 黑色 2G/32G</span>
+									</li>
+									<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+										<a href="product_info.html" class="P_main_te">
+											<img src="img/p_48.png" />
+											<div class="product_info_yin">
+												<span>点击详情</span>
+											</div>
+										</a>
+										<span>GPD XD 黑色 2G/16G</span>
+									</li>
+									<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+										<a href="product_info.html" class="P_main_te1">
+											<img src="img/p_82.png" />
+											<div class="product_info_yin">
+												<span>点击详情</span>
+											</div>
+										</a>
+										<span>GPD Q9 2G/16G</span>
+									</li>
+									<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+										<a href="product_info.html" class="P_main_te1">
+											<img src="img/p_79.png" />
+											<div class="product_info_yin">
+												<span>点击详情</span>
+											</div>
+										</a>
+										<span>GPD Q89 1G/8G</span>
+									</li>
+									<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+										<a href="product_info.html" class="P_main_te1">
+											<img src="img/p_112.png" />
+											<div class="product_info_yin">
+												<span>点击详情</span>
+											</div>
+										</a>
+										<span>GPD G18  1G/16G</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						
+						<!--装备配件-->
+						<div class="P_list_main2">
+							<div class="P_main_top">
+								<span>装备配件</span>
+							</div>
+							<div class="P_main">
+								<ul class="peijian">
+									<li class="col-lg-6 col-md-6 col-sm-6">
+										<a href="product_info.html" class="P_main_te">
+											<img src="img/p_bao.png" />
+											<div class="product_info_yin">
+												<span>点击详情</span>
+											</div>
+										</a>
+										<span>GPD WIN/XD 通用保护包 EVA材质</span>
+									</li>
+									<li class="col-lg-6 col-md-6 col-sm-6">
+										<a href="product_info.html" class="P_main_te">
+											<img src="img/p_mo.jpg" />
+											<div class="product_info_yin">
+												<span>点击详情</span>
+											</div>
+										</a>
+										<span>GPD WIN专用贴膜</span>
+									</li>
+									<li class="col-lg-6 col-md-6 col-sm-6">
+										<a href="product_info.html" class="P_main_te">
+											<img src="img/p_erji.jpg" />
+											<div class="product_info_yin">
+												<span>点击详情</span>
+											</div>
+										</a>
+										<span>GPD Pocket 专用耳机</span>
+									</li>
+									<li class="col-lg-6 col-md-6 col-sm-6">
+										<a href="product_info.html" class="P_main_te">
+											<img src="img/p_ke.png" />
+											<div class="product_info_yin">
+												<span>点击详情</span>
+											</div>
+										</a>
+										<span>GPD WIN外壳全套</span>
+									</li>
+									<li class="col-lg-6 col-md-6 col-sm-6">
+										<a href="product_info.html">
+											<img src="img/p_fengshan.png" />
+											<div class="product_info_yin">
+												<span>点击详情</span>
+											</div>
+										</a>
+										<span>GPD WIN掌机原厂风扇配件</span>
+									</li>
+									<li class="col-lg-6 col-md-6 col-sm-6">
+										<a href="product_info.html">
+											<img src="img/p_ping.png" />
+											<div class="product_info_yin">
+												<span>点击详情</span>
+											</div>
+										</a>
+										<span>GPD WIN原厂屏幕</span>
+									</li>
+									<li class="col-lg-6 col-md-6 col-sm-6">
+										<a href="product_info.html">
+											<img src="img/p_tou.png" />
+											<div class="product_info_yin">
+												<span>点击详情</span>
+											</div>
+										</a>
+										<span>GPD WIN原厂充电头</span>
+									</li>
+								</ul>
+							</div>
+						</div>	
+						
+							
+							<!--业务介绍-->
+						<div class="P_list_main3">
+							<div class="P_main_top">
+								<span>业务介绍</span>
+							</div>
+							<div class="P_main">
+								<p>由本公司自主向大众推荐我们公司的产品</p>
+								<p>选取地域代销商，由代销商负责销售我们公司的产品</p>
+								<p>同时生产游戏机配件，为其他游戏机公司提供配件源头</p>
+								<p>进货游戏机配件，向游戏机供货商进货我们所不具备有的游戏机配件</p>
+								<img src="img/yewutu.png" class="col-xs-12" />
+							</div>
+						</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--页尾-->
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<p>Copyright  @  2003-2016 www.***.com, All Rights Reserved.&nbsp;&nbsp;&ang;渝ICP备05012247号 &nbsp;技术支持：王正炼</p>
+				</div>
+			</div>
+		</div>
+		
+		<!--返回按钮-->
+		<div class="fix hidden-xs">
+			<a href="#">
+				<img src="img/fanhui.png"/>
+			</a>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			$( '.sidebar' ).simpleSidebar({
+				settings: {
+					opener: '#open-sb',
+					wrapper: '.wrapper',
+					animation: {
+						duration: 500,
+						easing: 'easeOutQuint'
+					}
+				},
+				sidebar: {
+					align: 'left',
+					width: 200,
+					closingLinks: 'a',
+				}
+			});
+		});
+		</script>
+		
+		<script type="text/javascript">
+		$(function(){
+		$(".subNav").click(function(){
+					// 修改数字控制速度， slideUp(500)控制卷起速度
+					$(this).next(".navContent").slideToggle(500);
+			})	
+		})
+	</script>
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.js" ></script>
+	<script type="text/javascript" src="js/index.js" ></script>
+	<script type="text/javascript" src="js/velocity.js" ></script>
+	<script type="text/javascript" src="js/shutter.js" ></script>
+	<script>
+	$(function () {
+	  $('.shutter').shutter({
+		shutterW: 100+"%", // 容器宽度
+		shutterH: 100+"%", // 容器高度
+		isAutoPlay: true, // 是否自动播放
+		playInterval: 3000, // 自动播放时间
+		curDisplay: 3, // 当前显示页
+		fullPage: false // 是否全屏展示
+	  });
+	});
+	</script>
+</html>
