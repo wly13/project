@@ -1,0 +1,65 @@
+@media only screen and (max-width:768px ) {
+	.clearfix{
+		width: 100%;
+		height: auto;
+		margin: auto;
+	}
+	.topic{
+		width: 100%;
+		height: auto;
+	}
+	
+	.neikuang{
+		width: 100%;
+		height: auto;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	.coder{
+		margin-left: 1.5%;
+		width: 97%;
+		height: 110px;
+		padding: 3%;
+		box-sizing: border-box;
+	}
+	/*.coder img{
+		width: 100%;
+	}*/
+	.tuyi{
+		width: 40%;
+		padding: 0px;
+	}
+	.topic>img{
+		display: none;
+	}
+	.s_bd{
+		width: 100%;
+		height: auto;
+		float: left;
+		margin-top:3%;
+		margin-left: 0px;
+	}
+	.s_bd img{
+		width: 97%;
+		display: block;
+		margin: auto;
+	}
+	.item{
+		font-size: 15px;
+		padding-top: 3%;
+		padding-left: 5%;
+	}
+	.jieshao{
+		width:100%;
+		height: auto;
+		margin-left: 0px;
+		padding: 3%;
+		box-sizing: border-box;
+	}
+	.jieshao p{
+		font-size: 16px;
+	}
+	.xiantiao{
+		display: none;
+	}
+}
